@@ -129,6 +129,7 @@ let toolchainLoader = Loader(searchPaths: [
 // MARK: - Windows
 
 let toolchainLoader = Loader(searchPaths: [
+    "C:\\Library\\Developer\\Toolchains\\unknown-Asserts-development.xctoolchain\\usr\\bin",
 ].compactMap {
     FileManager.default.fileExists(atPath: $0) ? $0 : nil
 })
